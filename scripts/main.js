@@ -12,11 +12,11 @@ $("body").terminal( function(command, term) {
 });
 
 function respond(message, term) {
-  let url = "http://0.0.0.0:5000";
-  //let url = "https://arcane-fortress-58468.herokuapp.com/";
+  //let url = "http://0.0.0.0:5000";
+  let url = "https://arcane-fortress-58468.herokuapp.com/";
   $.ajax({
     type: "POST",
-    url: "http://0.0.0.0:5000",
+    url: url,
     data: message,
     dataType: "text",
     success: function(data) {
