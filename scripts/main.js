@@ -1,6 +1,10 @@
-$("body").terminal( function(command, term) {
+/*
+ * @author Oliver Jiang
+*/
+
+$("body").terminal( async function(command, term) {
   if (command.length > 0) {
-    respond(command, term);
+    await respond(command, term);
   }
 }, {
   name: "CorrectBot",
@@ -17,6 +21,7 @@ function respond(message, term) {
   $.ajax({
     type: "POST",
     url: url,
+    async: false,
     data: message,
     dataType: "text",
     success: function(data) {
@@ -38,7 +43,8 @@ function header(term) {
     "| |__| (_) | |  | | |  __/ (__| |_| |_) | (_) | |_ \n" +
     " \\____\\___/|_|  |_|  \\___|\\___|\\__|____/ \\___/ \\__|\n" +
     "Hi, I'm Correctbot! I am always correct (except for when I'm wrong)!\n" +
-    "Please tell me something you believe! Please send one complete sentence at a time :D.\n"
+    "Please tell me something you believe! Please send one complete sentence at a time :D.\n" +
+    "Also, I'm slow on startup, so please bear with me!\n"
   );
 }
 
