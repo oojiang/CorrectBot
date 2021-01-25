@@ -1,9 +1,9 @@
 # CorrectBot
 Front end for hosting CorrectBot on the web. 
 
-Chat with CorrectBot [here](https://oojiang.github.io/CorrectBot/).
+[Chat](https://oojiang.github.io/CorrectBot/) with CorrectBot.
 
-Read about Correctbot [here](https://github.com/oojiang/CorrectBot-fb-messenger).
+[Read](https://github.com/oojiang/CorrectBot-fb-messenger) about Correctbot.
 
 # Technologies
 Powered by [Jquery Terminal](https://terminal.jcubic.pl/).
