@@ -25,7 +25,7 @@ function respond(message, term) {
     data: message,
     dataType: "text",
     success: function(data) {
-      term.echo(data);
+      term.echo("\n" + data);
     },
     error: function(jqXHR, textStatus, errorThrown) {
       console.log('jqXHR ' + jqXHR);
